@@ -9,11 +9,13 @@ class Timer extends Component {
 
   // add your code here
 
+  componentDidMount(){
+    this.clockTick()
+  }
 
-
-
-
-
+  componentWillUnmount(){
+    this.stopClock()
+  }
 
   render() {
 
